@@ -1,0 +1,84 @@
+# A291295: an explicit dominating set of size 59 in the 12th Fibonacci cube Gamma_12,
+# proving a(12) <= 59 and hence a(12) in [54, 59] (lower bound 54 and previous upper
+# bound 61 from Azarija, Klavzar, Rho, and Sim, Ars Math. Contemp. 14 (2018) 387-395).
+#
+# ENCODING. Gamma_12 has as vertices the 377 binary strings of length 12 that contain
+# no two consecutive 1s (377 = Fibonacci(14)); two vertices are adjacent iff they
+# differ in exactly one position (Hamming distance 1). Gamma_12 has 1308 edges.
+# Each non-comment line below is one vertex of the dominating set, written as its
+# 12-character binary string (leftmost character = position 1 of the string; no
+# integer re-indexing is used). There are 59 lines.
+#
+# VERIFICATION RECIPE (as performed by an independent, freshly written checker):
+# 1. Generate all 2^12 binary strings of length 12; keep those with no "11"
+#    substring; assert exactly 377 remain.
+# 2. For each vertex, its neighbors are the strings obtained by flipping one bit
+#    that are themselves in the vertex set; assert the total edge count is 1308.
+# 3. Read the 59 lines below; assert 59 distinct strings, each of length 12 over
+#    {0,1} with no "11" substring.
+# 4. Assert every one of the 377 vertices either appears below or has at least one
+#    neighbor that appears below. All checks pass, so this set is dominating and
+#    a(12) <= 59.
+#
+# Found by CP-SAT search assisted by Claude (Anthropic); verified by three
+# independent programs (the CP-SAT model itself, a solver-free recheck at run
+# time, and the fresh from-definition checker described above).
+000000101000
+000000101010
+000001000101
+000001001001
+000001010000
+000010001000
+000010010001
+000010010010
+000010100100
+000100000100
+000100010001
+000100101001
+000101000010
+001000000010
+001000010100
+001000100001
+001001001000
+001001010001
+001010000101
+001010001000
+001010101000
+010000000001
+010000001010
+010000100101
+010001000100
+010001010010
+010001010101
+010010000001
+010010010100
+010010100010
+010010101001
+010100000001
+010100001010
+010100010000
+010100100000
+010101001000
+010101010101
+100000000000
+100000010101
+100001001010
+100010001010
+100010010100
+100010100001
+100010101001
+100100001000
+100100010010
+100100100010
+100100100101
+100101000001
+100101010100
+101000001001
+101000100100
+101000101010
+101001000100
+101001010001
+101001010010
+101010000101
+101010010000
+101010100010

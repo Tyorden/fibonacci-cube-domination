@@ -1,0 +1,8 @@
+ENDED_AT 2026-09-20 01:46:25 PDT  (watcher noticed within 60 s)
+LOG_TAIL:
+CNF: 18183 vars, 37713 clauses; K=54
+CNF: 18183 vars, 37713 clauses; K=54
+(eval):1: command not found: setsid
+RESULT_FILES:
+  none (process died without an answer: killed, reboot, or crash)
+UPTIME:  1:46  up 102 days,  4:25, 23 users, load averages: 4.45 4.43 4.32

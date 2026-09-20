@@ -1,0 +1,38 @@
+{
+  "title": "fibonacci-cube-domination: a documented attempt at the domination number of the 12th Fibonacci cube (OEIS A291295): a verified 59-vertex dominating set, an exact k = 54 SAT instance, and the record of an undecided 30-day run",
+  "upload_type": "software",
+  "description": "<p>A documented attempt, not a result. Question: the domination number gamma(Gamma_12) of the 12th Fibonacci cube (377 vertices, 1308 edges). Published bracket: 54 <= gamma(Gamma_12) <= 61 (Azarija, Klavzar, Rho and Sim, Ars Math. Contemp. 14 (2018) 387-395, doi:10.26493/1855-3974.1172.bae). This deposit holds (1) an explicit dominating set of 59 vertices with a from-definition verifier, which gives gamma(Gamma_12) <= 59 and is published as the a-file of OEIS A291295 (comment dated Sep 06 2026); (2) the exact CNF instance (sha256 cc5880ac28d3d9af4b0fb54f913cf0464e2229c276595e905312c904b5549f96) encoding 'Gamma_12 has a dominating set of at most 54 vertices', with the encoder script and the encoding sanity record; (3) the record of a single-core CaDiCaL 1.9.5 run on that instance that was terminated after 29 days 22 hours (710.4 CPU-hours) without a decision and without a proof log. An interrupted CDCL run proves nothing; this deposit changes no bound. The bracket 54 <= gamma(Gamma_12) <= 59 stands as on A291295. A checkable continuation (cube-and-conquer with DRAT proof logging) is described in the README. Code is MIT-licensed; data, run records and text are CC BY 4.0 (see LICENSE). Code and text prepared with Claude (Anthropic) under the author's direction; the runs were made on the author's machine.</p>",
+  "creators": [
+    {
+      "name": "Orden, Tyler Satchel",
+      "orcid": "0009-0004-9205-7422"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Fibonacci cube",
+    "domination number",
+    "dominating set",
+    "SAT",
+    "CaDiCaL",
+    "cardinality constraint",
+    "symmetry breaking",
+    "OEIS",
+    "A291295",
+    "verification"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://oeis.org/A291295",
+      "relation": "isSupplementTo",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "10.26493/1855-3974.1172.bae",
+      "relation": "cites",
+      "resource_type": "publication-article"
+    }
+  ],
+  "version": "2026.09.20",
+  "access_right": "open"
+}

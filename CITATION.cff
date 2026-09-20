@@ -1,0 +1,48 @@
+cff-version: 1.2.0
+message: "If you use the instance, the witness or the code, please cite it as below."
+title: "fibonacci-cube-domination: a documented attempt at the domination number of the 12th Fibonacci cube (OEIS A291295): a verified 59-vertex dominating set, an exact k = 54 SAT instance, and the record of an undecided 30-day run"
+type: software
+version: "2026.09.20"
+date-released: "2026-09-20"
+authors:
+  - family-names: Orden
+    given-names: Tyler Satchel
+    orcid: "https://orcid.org/0009-0004-9205-7422"
+repository-code: "https://github.com/Tyorden/fibonacci-cube-domination"
+license: MIT
+keywords:
+  - Fibonacci cube
+  - domination number
+  - dominating set
+  - SAT
+  - CaDiCaL
+  - cardinality constraint
+  - symmetry breaking
+  - OEIS
+  - A291295
+  - verification
+references:
+  - type: article
+    title: "On domination-type invariants of Fibonacci cubes and hypercubes"
+    authors:
+      - family-names: Azarija
+        given-names: Jernej
+      - family-names: Klavžar
+        given-names: Sandi
+      - family-names: Rho
+        given-names: Yoomi
+      - family-names: Sim
+        given-names: Seungbo
+    year: 2018
+    journal: "Ars Mathematica Contemporanea"
+    volume: 14
+    issue: 2
+    start: 387
+    end: 395
+    doi: "10.26493/1855-3974.1172.bae"
+  - type: generic
+    title: "OEIS A291295: Domination number of n-Fibonacci cube graph"
+    authors:
+      - name: "OEIS Foundation Inc."
+    year: 2017
+    url: "https://oeis.org/A291295"
