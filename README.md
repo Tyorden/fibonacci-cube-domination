@@ -1,5 +1,8 @@
 # fibonacci-cube-domination
 
+Archived on Zenodo: DOI [10.5281/zenodo.22985212](https://doi.org/10.5281/zenodo.22985212) (concept DOI 10.5281/zenodo.22985187, always the newest version). Cite the DOI for this deposit.
+
+
 A documented attempt, not a result. This repository deposits, for anyone who wants to build on
 it, exactly three things about the domination number of the 12th Fibonacci cube: a verified
 59-vertex dominating set (which is already public on OEIS A291295), the exact SAT instance for
